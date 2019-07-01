@@ -60,7 +60,7 @@ async function getPushes(sinceSeconds: number): Promise<Push[]> {
     },
     qs: {
       active: true,
-      modified_after: thirtySecondsAgo,
+      modified_after: thirtySecondsAgo.toFixed(),
     },
     json: true,
   })).pushes;
